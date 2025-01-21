@@ -4,14 +4,19 @@ const list2024 = [
     "tt6263850",
     "tt26753003",
     "tt4978420",
-    "tt21692408"
+    "tt21692408",
+    "tt17279496",
+    "tt26658104",
+    "tt22022452"
 ];
 
 const tendance = [
-    
+    "tt1160419",
+    "tt0167260",
+    "tt1677720"
 ];
 
-let currentIndex = 0;
+sessionStorage.setItem("acc",0)
 
 function displayFilms(idFilm, imgId, titleId) {
     fetch(`https://www.omdbapi.com/?apikey=d957911b&i=${idFilm}`)
@@ -32,21 +37,21 @@ function displayFilms(idFilm, imgId, titleId) {
 }
 
 function loadMoreFilms() {
-    for (let i = 0; i < 2 && currentIndex < list2024.length; i++) {
-        displayFilms(list2024[currentIndex], 'imagefilm', 'titrefilm');
-        currentIndex++;
+    let x = sessionStorage.getItem("acc")
+    for (let i = 0; i < 3 && x < list2024.length; i++) {
+        displayFilms(list2024[x], 'imagefilm', 'titrefilm');
+        x++;
     }
+    sessionStorage.setItem("acc",x)
 
-
-    if (currentIndex >= list2024.length) {
+    if (acc >= list2024.length) {
         document.getElementById('Plus').disabled = true;
     }
 }
 
 
-for (let i = 0; i < 3 && i < list2024.length; i++) {
-    displayFilms(list2024[i], 'imagefilm', 'titrefilm');
-    currentIndex++;
+for (let i = 0; i < 3 && i < tendance.length; i++) {
+    displayFilms(tendance[i], 'imagefilm', 'titrefilm');
 }
 
 
