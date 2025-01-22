@@ -1,28 +1,14 @@
-#filmsContainer {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 60px;     
-    width: 100%;   
-    margin-left: 115px;
-}
-
-.film {
-    width: 400px;
-    text-align: center;
+body {
+    background-image: url("fond\ acceuil\ 4.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    margin: auto;
+    padding: auto;
+    font-family: Arial, sans-serif;
     color: white;
-    flex-direction: column; 
-    align-items: center;    
+    text-align: center;
 }
-
-.film img {
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    margin-top: 60px;
-}
-
 header {
     color: #f2b22c;
     width: 100%;
@@ -35,15 +21,6 @@ header {
 
 }
 
-body{
-    background-image: url("fond\ acceuil\ 4.jpeg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    margin:auto;
-    padding:auto;
-}
-
 .acceuil{
     margin-left: 115px;
 }
@@ -52,3 +29,45 @@ a{
     text-decoration: none;
     color: #f2b22c;
 }
+
+.filmDetails {
+    width: 500px;
+    height: 500px;
+}
+
+#film{
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-size: large;
+}
+
+#photo{
+    width: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+    justify-content: center;
+}
+
+#plotes{
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+#acteurs{
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+#genre{
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+#notes{
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+
+
