@@ -1,0 +1,54 @@
+#filmsContainer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px;     
+    width: 100%;   
+    margin-left: 115px;
+}
+
+.film {
+    width: 400px;
+    text-align: center;
+    color: white;
+    flex-direction: column; 
+    align-items: center;    
+}
+
+.film img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 60px;
+}
+
+header {
+    color: #f2b22c;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 10%;
+    padding: 20px;
+
+}
+
+body{
+    background-image: url("fond\ acceuil\ 4.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    margin:auto;
+    padding:auto;
+}
+
+.acceuil{
+    margin-left: 115px;
+}
+    
+a{
+    text-decoration: none;
+    color: #f2b22c;
+}
