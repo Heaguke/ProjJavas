@@ -18,7 +18,7 @@ const tendance = [
 
 sessionStorage.setItem("acc",0)
 
-function displayFilms(idFilm, imgId, titleId) {
+function displayFilms(idFilm) {
     fetch(`https://www.omdbapi.com/?apikey=d957911b&i=${idFilm}`)
         .then(response => response.json())
         .then(data => {
@@ -27,6 +27,10 @@ function displayFilms(idFilm, imgId, titleId) {
             const filmImage = document.createElement('img');
             filmImage.src = data.Poster;
             filmImage.alt = data.Title;
+            filmImage.addEventListener('click', () => {
+                sessionStorage.setItem('selectedFilmId', idFilm); 
+                window.location.href = 'movie.html'; 
+            });
             const filmTitle = document.createElement('h3');
             filmTitle.textContent = data.Title;
             filmElement.appendChild(filmImage);
@@ -35,6 +39,7 @@ function displayFilms(idFilm, imgId, titleId) {
         })
         .catch(err => console.error('Erreur API:', err));
 }
+
 
 function loadMoreFilms() {
     let x = sessionStorage.getItem("acc")
@@ -56,3 +61,4 @@ for (let i = 0; i < 3 && i < tendance.length; i++) {
 
 
 document.getElementById('Plus').addEventListener('click', loadMoreFilms);
+
