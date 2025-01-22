@@ -77,10 +77,10 @@ a{
 }
 
 #txt{
-    background-color: rgba(149, 149, 149, 0.9); /* Couleur semi-transparente */
-    border-radius: 1em; /* Coins arrondis */
-    display: inline-block; /* Ajuste la largeur à celle du contenu */
-    padding: 20px; /* Espacement interne pour éviter que le texte touche les bords */
-    margin: 20px auto; /* Centrage horizontal et espacement vertical */
-    text-align: center; /* Centrer le texte */
+    background-color: rgba(149, 149, 149, 0.9); 
+    border-radius: 1em; 
+    display: inline-block; 
+    padding: 20px; 
+    margin: 20px auto; 
+    text-align: center; 
 }
