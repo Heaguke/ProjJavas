@@ -1,0 +1,86 @@
+header {
+    color: #f2b22c;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 10%;
+    padding: 20px;
+
+}
+
+body {
+    background-image: url("fond\ acceuil\ 4.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    margin: auto;
+    padding: auto;
+    color: white;
+    text-align: center;
+}
+
+
+
+.acceuil{
+    margin-left: 115px;
+}
+    
+a{
+    text-decoration: none;
+    color: #f2b22c;
+}
+
+.filmDetails {
+    width: 500px;
+    height: 500px;
+}
+
+#film{
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-size: large;
+}
+
+#photo{
+    width: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+    justify-content: center;
+}
+
+#plot{
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-size:  1.2rem;
+}
+#acteurs{
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-size:  1.2rem;
+}
+#genre{
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-size:  1.2rem;
+}
+#notes{
+    color:white;
+    text-align: center;
+    margin: 20px;
+    font-size:  1.2rem;
+}
+
+#txt{
+    background-color: rgba(149, 149, 149, 0.9); 
+    border-radius: 1em; 
+    display: inline-block; 
+    padding: 20px; 
+    margin: 20px auto; 
+    text-align: center; 
+}
