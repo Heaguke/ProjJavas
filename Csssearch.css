@@ -39,4 +39,78 @@ label {
 input,label {
     margin: 0.4rem 0;
   }
-  
+
+.cherche {
+    width: 300px; 
+    padding: 10px; 
+    font-size: 1rem; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.button {
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    color: white; 
+    background-color: black; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.button:hover {
+    background-color: grey; 
+}
+
+
+#filmsContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px;     
+    width: 100%;   
+    margin-left: 115px;
+}
+
+.film {
+    width: 400px;
+    text-align: center;
+    color: white;
+    flex-direction: column; 
+    align-items: center;    
+}
+
+.film img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 60px;
+}
+
+
+#PageSuivante {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#PageSuivante:hover {
+    background-color: #0056b3;
+}
+
+.placeholder {
+    width: 400px; 
+    height: 600px; 
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #666; 
+    text-align: center;
+}
